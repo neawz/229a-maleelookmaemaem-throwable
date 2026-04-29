@@ -34,6 +34,7 @@ public class Throwable : MonoBehaviour
         if (Keyboard.current.upArrowKey.isPressed && !CameraController.GetInstance().cameraFollow)
         {
             Debug.Log("Key Pressed");
+            GameManager.GetInstance()?.MiniTutorialDone();
             AddForceToObject();
         }
 

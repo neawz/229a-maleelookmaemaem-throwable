@@ -3,9 +3,18 @@ using UnityEngine.UI;
 
 public class StartMenu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject startMenu;
-    public bool hasStart = false;
+    private bool hasStart = false;
+    public bool GetHasStart()
+    {
+        return hasStart;
+    }
+    private static StartMenu instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
@@ -27,5 +36,7 @@ public class StartMenu : MonoBehaviour
         hasStart = true;
         Time.timeScale = 1f;
         startMenu.SetActive(false);
+
+        instance.enabled = false;
     }
 }

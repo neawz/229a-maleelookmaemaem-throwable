@@ -7,13 +7,23 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public Button StartGameButton;
+    [Header("Start")]
+    public StartMenu startMenu;
+
+    [Header("Tutorial")]
+    public GameObject tutorialUI;
+
+    [Header("Game Over")]
     public Button PlayAgainButton;
     public Button CreditButton;
+    public TextMeshProUGUI RoundScoreText;
+    public TextMeshProUGUI HighScoreText;
 
     [Header("Score")]
+    public GameObject ScoreUI;
     public TextMeshProUGUI ScoreText;
 
+    private bool onceStarted = true;
     private static GameManager instance;
     public static GameManager GetInstance()
     {
@@ -30,18 +40,10 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // StartGameButton.onClick.AddListener(() =>
-        // {
-        //     // Start UI .SetActive(false)
-        //     // Other Game UI .SetActive(True)
-        //     CameraController.GetInstance().enabled = true;
-        //     Throwable.GetInstance().enabled = true;
-        // });
-
         // PlayAgainButton.onClick.AddListener(() =>
         // {
         //     Time.timeScale = 1f;
-        //     SceneManager.LoadScene("Play");
+        //     SceneManager.LoadScene("Main");
         // });
 
         // CreditButton.onClick.AddListener(() =>
@@ -53,6 +55,15 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (startMenu.GetHasStart() && onceStarted)
+        {
+            ScoreUI.SetActive(true);
+            tutorialUI.SetActive(true);
+            CameraController.GetInstance().enabled = true;
+            Throwable.GetInstance().enabled = true;
+            onceStarted = false;
+        }
+
         if (CameraController.GetInstance().cameraFollow)
         {
             ScoreText.text = $"{Throwable.GetInstance().GetDistance():F1} m";
@@ -60,10 +71,32 @@ public class GameManager : MonoBehaviour
     }
     public void GameOver()
     {
+        SaveHighScore();
         Time.timeScale = 0f;
         CameraController.GetInstance().enabled = false;
         Throwable.GetInstance().enabled = false;
+        
+        ScoreUI.SetActive(false);
         // Final/Result UI .SetActive(true)
-        // bla bla bla
+        RoundScoreText.text = $"Round Score: {PlayerPrefs.GetFloat("RoundScore", 0):F1} m";
+        HighScoreText.text = $"High Score: {PlayerPrefs.GetFloat("HighScore", 0):F1} m";
+    }
+
+    public void MiniTutorialDone()
+    {
+        tutorialUI.SetActive(false);
+    }
+
+    public void SaveHighScore()
+    {
+        float roundScore = Throwable.GetInstance()?.GetDistance() ?? 0;
+        PlayerPrefs.SetFloat("RoundScore", roundScore);
+
+        float highScore = PlayerPrefs.GetFloat("HighScore", 0);
+        if (roundScore > highScore)
+        {
+            PlayerPrefs.SetFloat("HighScore", roundScore);
+        }
+        PlayerPrefs.Save();
     }
 }
