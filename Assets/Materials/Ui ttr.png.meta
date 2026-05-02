@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 67695a4926c3879489f652fa7709ff34
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4942136631834556174
+    second: Ui ttr_0
+  - first:
+      213: 1081737235635111520
+    second: Ui ttr_1
+  - first:
+      213: 1592144545956306543
+    second: Ui ttr_2
+  - first:
+      213: 8441864475892028764
+    second: Ui ttr_3
+  - first:
+      213: 3745717738542681360
+    second: Ui ttr_4
+  - first:
+      213: -5912038237447871680
+    second: Ui ttr_5
+  - first:
+      213: 8427942493421498098
+    second: Ui ttr_6
+  - first:
+      213: 1902046735088316630
+    second: Ui ttr_7
+  - first:
+      213: 2894199644410375044
+    second: Ui ttr_8
+  - first:
+      213: -2564941593462191176
+    second: Ui ttr_9
+  - first:
+      213: 7011468181437320713
+    second: Ui ttr_10
+  - first:
+      213: 8100378375340188608
+    second: Ui ttr_11
+  - first:
+      213: 3601034018233077462
+    second: Ui ttr_12
+  - first:
+      213: 8546931715347078917
+    second: Ui ttr_13
+  - first:
+      213: 6734152120335216043
+    second: Ui ttr_14
+  - first:
+      213: -1615925579726423773
+    second: Ui ttr_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ui ttr_0
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 462
+        width: 292
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07b1f3051ff59440800000000000000
+      internalID: 4942136631834556174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_1
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 514
+        width: 66
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0660856d84a130f00800000000000000
+      internalID: 1081737235635111520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_2
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 586
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6e1dcc670f681610800000000000000
+      internalID: 1592144545956306543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_3
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 511
+        width: 102
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55988f8307872570800000000000000
+      internalID: 8441864475892028764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_4
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 473
+        width: 34
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d47b200767bf330800000000000000
+      internalID: 3745717738542681360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_5
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 452
+        width: 48
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043a46edb8834fda0800000000000000
+      internalID: -5912038237447871680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_6
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 507
+        width: 24
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2feeecb6b0116f470800000000000000
+      internalID: 8427942493421498098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_7
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 502
+        width: 59
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d071279d6d656a10800000000000000
+      internalID: 1902046735088316630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 161
+        width: 654
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b64221e334a2820800000000000000
+      internalID: 2894199644410375044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_9
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 247
+        width: 114
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbcf0cd53f776cd0800000000000000
+      internalID: -2564941593462191176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_10
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 187
+        width: 103
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e8684a92dbd4160800000000000000
+      internalID: 7011468181437320713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_11
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 203
+        width: 73
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c36868f6335a6070800000000000000
+      internalID: 8100378375340188608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_12
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 202
+        width: 51
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de41e84c5179f130800000000000000
+      internalID: 3601034018233077462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_13
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 202
+        width: 62
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f58cc8c1dcc9670800000000000000
+      internalID: 8546931715347078917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_14
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 193
+        width: 88
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad2604aca3847d50800000000000000
+      internalID: 6734152120335216043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ui ttr_15
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 214
+        width: 97
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32970fc2f341399e0800000000000000
+      internalID: -1615925579726423773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ui ttr_0: 4942136631834556174
+      Ui ttr_1: 1081737235635111520
+      Ui ttr_10: 7011468181437320713
+      Ui ttr_11: 8100378375340188608
+      Ui ttr_12: 3601034018233077462
+      Ui ttr_13: 8546931715347078917
+      Ui ttr_14: 6734152120335216043
+      Ui ttr_15: -1615925579726423773
+      Ui ttr_2: 1592144545956306543
+      Ui ttr_3: 8441864475892028764
+      Ui ttr_4: 3745717738542681360
+      Ui ttr_5: -5912038237447871680
+      Ui ttr_6: 8427942493421498098
+      Ui ttr_7: 1902046735088316630
+      Ui ttr_8: 2894199644410375044
+      Ui ttr_9: -2564941593462191176
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
