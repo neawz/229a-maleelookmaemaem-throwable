@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI RoundScoreText;
     public TextMeshProUGUI HighScoreText;
 
+    public GameObject gameOverUi;
+
     [Header("Score")]
     public GameObject ScoreUI;
     public TextMeshProUGUI ScoreText;
@@ -38,19 +40,19 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(gameObject);
+        
 
-        // PlayAgainButton.onClick.AddListener(() =>
-        // {
-        //     Time.timeScale = 1f;
-        //     SceneManager.LoadScene("Main");
-        // });
+        PlayAgainButton.onClick.AddListener(() =>
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("Main");
+        });
 
-        // CreditButton.onClick.AddListener(() =>
-        // {
-        //     Time.timeScale = 1f;
-        //     SceneManager.LoadScene("Credit");
-        // });
+        CreditButton.onClick.AddListener(() =>
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("Credit");
+        });
     }
 
     void Update()
@@ -77,9 +79,9 @@ public class GameManager : MonoBehaviour
         Throwable.GetInstance().enabled = false;
         
         ScoreUI.SetActive(false);
-        // Final/Result UI .SetActive(true)
-        RoundScoreText.text = $"Round Score: {PlayerPrefs.GetFloat("RoundScore", 0):F1} m";
-        HighScoreText.text = $"High Score: {PlayerPrefs.GetFloat("HighScore", 0):F1} m";
+        gameOverUi.SetActive(true);
+        RoundScoreText.text = $" {PlayerPrefs.GetFloat("RoundScore", 0):F1} m";
+        HighScoreText.text = $" {PlayerPrefs.GetFloat("HighScore", 0):F1} m";
     }
 
     public void MiniTutorialDone()
