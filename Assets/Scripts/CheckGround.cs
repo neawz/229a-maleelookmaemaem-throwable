@@ -7,6 +7,8 @@ public class CheckGround : MonoBehaviour
         if (other.collider.CompareTag("Ground"))
         {
             GameManager.GetInstance().GameOver();
+            AudioManager.GetInstance().PlayFall();
+            AudioManager.GetInstance()?.StopWind();
             Debug.Log("Ground Hit");
         }
     }

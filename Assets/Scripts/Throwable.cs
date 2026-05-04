@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class Throwable : MonoBehaviour
 {
-    int accel = 10;
+    public int accel = 100;
     Rigidbody2D rb;
     HingeJoint2D hj;
 
@@ -36,12 +36,25 @@ public class Throwable : MonoBehaviour
             Debug.Log("Key Pressed");
             GameManager.GetInstance()?.MiniTutorialDone();
             AddForceToObject();
+            
         }
+        if (Keyboard.current.upArrowKey.wasPressedThisFrame && !CameraController.GetInstance().cameraFollow)
+        {
+            AudioManager.GetInstance()?.PlaySpinLoop();
+        }
+
+        
+        if (Keyboard.current.upArrowKey.wasReleasedThisFrame)
+        {
+            AudioManager.GetInstance()?.StopSpin();
+        }
+
 
         if (Keyboard.current.spaceKey.wasPressedThisFrame && !CameraController.GetInstance().cameraFollow)
         {
             hj.enabled = false;
             CameraController.GetInstance().cameraFollow = true;
+            AudioManager.GetInstance()?.PlayWindLoop();
         }
     }
 

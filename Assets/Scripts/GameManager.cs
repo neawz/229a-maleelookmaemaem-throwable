@@ -44,12 +44,14 @@ public class GameManager : MonoBehaviour
 
         PlayAgainButton.onClick.AddListener(() =>
         {
+            AudioManager.GetInstance().PlayClick();
             Time.timeScale = 1f;
             SceneManager.LoadScene("Main");
         });
 
         CreditButton.onClick.AddListener(() =>
         {
+            AudioManager.GetInstance().PlayClick();
             Time.timeScale = 1f;
             SceneManager.LoadScene("Credit");
         });
@@ -82,6 +84,7 @@ public class GameManager : MonoBehaviour
         gameOverUi.SetActive(true);
         RoundScoreText.text = $" {PlayerPrefs.GetFloat("RoundScore", 0):F1} m";
         HighScoreText.text = $" {PlayerPrefs.GetFloat("HighScore", 0):F1} m";
+        AudioManager.GetInstance().PlayResult();
     }
 
     public void MiniTutorialDone()
