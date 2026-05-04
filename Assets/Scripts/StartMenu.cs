@@ -5,6 +5,7 @@ public class StartMenu : MonoBehaviour
 {
     public GameObject startMenu;
     private bool hasStart = false;
+    private Throwable throwable;
     public bool GetHasStart()
     {
         return hasStart;
@@ -14,11 +15,13 @@ public class StartMenu : MonoBehaviour
     void Awake()
     {
         instance = this;
+        throwable = Throwable.GetInstance();
     }
 
     void Start()
     {
         Time.timeScale = 0f;
+        throwable.enabled = false;
         startMenu.SetActive(true);
     }
 
@@ -29,7 +32,6 @@ public class StartMenu : MonoBehaviour
         {
             AudioManager.GetInstance().PlayClick();
             StartGame();
-
         }
     }
 
@@ -38,7 +40,7 @@ public class StartMenu : MonoBehaviour
         hasStart = true;
         Time.timeScale = 1f;
         startMenu.SetActive(false);
-
+        throwable.enabled = true;
         instance.enabled = false;
     }
 }
