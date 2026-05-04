@@ -27,7 +27,9 @@ public class StartMenu : MonoBehaviour
     {
         if (!hasStart && Input.GetMouseButtonDown(0))
         {
+            AudioManager.GetInstance().PlayClick();
             StartGame();
+
         }
     }
 
