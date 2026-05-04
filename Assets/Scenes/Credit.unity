@@ -478,8 +478,8 @@ MonoBehaviour:
     CyberpunkSunset
     by Mr_Command_Coder '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8d67c17c96b790240b6abcdb79baa352, type: 2}
-  m_sharedMaterial: {fileID: 5659087194728082806, guid: 8d67c17c96b790240b6abcdb79baa352, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
